@@ -4,7 +4,7 @@
       {{ $t('臨時休校中の新型コロナウイルス感染症対応についてのお願い') }}
     </h2>
     <StaticCard>
-      <h3>1. {{ $t('感染予防・健康管理') }}</h3>
+      <h3>1. {{ $t('休校関連情報') }}</h3>
       <ul>
         <li>
           {{
@@ -39,10 +39,10 @@
         <li>
           {{ $t('「新型コロナウイルス感染症にかかる相談窓口について」') }}<br />
           <a
-            href="https://www.fukushihoken.metro.tokyo.lg.jp/iryo/kansen/coronasodan.html"
+            href="https://www.pref.chiba.lg.jp/kenfuku/kansenshou/corona-soudan.html"
             target="_blank"
             rel="noopener"
-            >https://www.fukushihoken.metro.tokyo.lg.jp/iryo/kansen/coronasodan.html</a
+            >https://www.pref.chiba.lg.jp/kenfuku/kansenshou/corona-soudan.html</a
           >
         </li>
       </ul>

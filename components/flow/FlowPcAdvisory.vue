@@ -24,6 +24,10 @@
           <div :class="$style.AdvisoryContentsTitle2">
             {{ $t('平日（日中）') }}
           </div>
+          <div :class="$style.AdvisoryContentsTitle2">
+            {{ $t('平日、土曜日、日曜日、祝日の時間外（午後5時から午前9時まで）') }}
+          </div>
+          <span>{{ $t('市川健康福祉センター（市川保健所）') }}</span>
           <div
             :class="[
               $style.AdvisoryLink,
@@ -31,16 +35,14 @@
               'mt-4'
             ]"
           >
-            <a
-              href="https://www.fukushihoken.metro.tokyo.lg.jp/iryo/kansen/coronasodan.html"
-              target="_blank"
-              rel="noopener"
-            >
-              <span>{{ $t('各保健所の電話番号は福祉保健局HPへ') }}</span>
-              <v-icon size="18">
-                mdi-open-in-new
-              </v-icon>
-            </a>
+          <a :class="$style.AdvisoryTelephone" href="tel:0473771103">
+            <img
+              :class="$style.AdvisoryTelephoneIcon"
+              src="/flow/phone-24px.svg"
+              aria-hidden="true"
+            />
+            047-377-1103
+          </a>
           </div>
         </div>
       </div>
@@ -48,9 +50,10 @@
       <div :class="$style.AdvisoryContents">
         <div class="pt-8">
           <div :class="$style.AdvisoryContentsTitle2">
-            {{ $t('平日（夜間）') }}
+            {{ $t('土曜日（夜間）') }}
           </div>
           <span>{{ $t('午後5時から翌朝午前9時') }}</span>
+          <span>{{ $t('県庁電話相談受付') }}</span>
         </div>
         <div class="mt-1">
           <span :class="$style.AdvisoryContentsSubTitle">
@@ -64,13 +67,13 @@
             'mt-1'
           ]"
         >
-          <a :class="$style.AdvisoryTelephone" href="tel:0353204592">
+          <a :class="$style.AdvisoryTelephone" href="tel:0432232989">
             <img
               :class="$style.AdvisoryTelephoneIcon"
               src="/flow/phone-24px.svg"
               aria-hidden="true"
             />
-            03-5320-4592
+            043-223-2989
           </a>
         </div>
       </div>

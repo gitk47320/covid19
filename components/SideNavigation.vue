@@ -13,7 +13,7 @@
           <img
             class="SideNavigation-HeaderLogo"
             src="/logo.svg"
-            :alt="$t('東京都')"
+            :alt="$t('市川市')"
           />
           <div class="SideNavigation-HeaderText">
             {{ $t('新型コロナウイルス感染症') }}<br />{{ $t('対策サイト') }}
@@ -47,7 +47,7 @@
       <footer class="SideNavigation-Footer">
         <div class="SideNavigation-Social">
           <a
-            href="https://line.me/R/ti/p/%40822sysfc"
+            href="https://line.me/R/ti/p/%40ichikawa-city"
             target="_blank"
             rel="noopener"
             class="SideNavigation-SocialLink"
@@ -55,7 +55,7 @@
             <img src="/line.png" alt="LINE" />
           </a>
           <a
-            href="https://twitter.com/tokyo_bousai"
+            href="https://twitter.com/ichikawa_shi"
             target="_blank"
             rel="noopener"
             class="SideNavigation-SocialLink"
@@ -63,7 +63,7 @@
             <img src="/twitter.png" alt="Twitter" />
           </a>
           <a
-            href="https://www.facebook.com/tochokoho"
+            href="https://www.facebook.com/city.ichikawa"
             target="_blank"
             rel="noopener"
             class="SideNavigation-SocialLink"
@@ -127,7 +127,7 @@ export default Vue.extend({
       return [
         {
           icon: 'mdi-chart-timeline-variant',
-          title: this.$t('都内の最新感染動向'),
+          title: this.$t('市川市の最新感染動向'),
           link: this.localePath('/')
         },
         {
@@ -143,7 +143,7 @@ export default Vue.extend({
         },
         {
           icon: 'mdi-account-multiple',
-          title: this.$t('都民の皆様へ'),
+          title: this.$t('市民の皆様へ'),
           link: 'https://www.metro.tokyo.lg.jp/tosei/tosei/news/2019-ncov.html'
         },
         {
@@ -153,20 +153,25 @@ export default Vue.extend({
           divider: true
         },
         {
-          title: this.$t('東京都新型コロナウイルス感染症対策本部報'),
+          title: this.$t('市川市新型コロナウイルスに関する対応等について'),
           link:
-            'https://www.bousai.metro.tokyo.lg.jp/taisaku/saigai/1007261/index.html'
+            'https://www.city.ichikawa.lg.jp/pub10/1111000206.html'
         },
         {
-          title: this.$t('東京都主催等 中止又は延期するイベント等'),
+          title: this.$t('新型コロナウイルスの感染防止のため中止等としたイベント'),
           link:
-            'https://www.seisakukikaku.metro.tokyo.lg.jp/information/event00.html'
+            'https://www.city.ichikawa.lg.jp/pla04/1111000296.html'
         },
         {
-          title: this.$t('知事からのメッセージ'),
+          title: this.$t('新型コロナウイルスの感染防止のため施設等の一部休館について'),
           link:
-            'https://www.metro.tokyo.lg.jp/tosei/governor/governor/katsudo/2020/03/03_00.html'
+            'https://www.city.ichikawa.lg.jp/pla04/infoheisa.html'
         },
+        // {
+        //   title: this.$t('知事からのメッセージ'),
+        //   link:
+        //     'https://www.metro.tokyo.lg.jp/tosei/governor/governor/katsudo/2020/03/03_00.html'
+        // },
         {
           title: this.$t('当サイトについて'),
           link: this.localePath('/about')
@@ -176,7 +181,7 @@ export default Vue.extend({
           link: this.localePath('/contacts')
         },
         {
-          title: this.$t('東京都公式ホームページ'),
+          title: this.$t('市川市公式ホームページ'),
           link: 'https://www.metro.tokyo.lg.jp/'
         }
       ]
